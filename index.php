@@ -13,7 +13,7 @@
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 text-white">Streamline Your Success With Virtual Assistance</h1>
                     <p class="text-lg md:text-xl text-gray-300 mb-8">I help entrepreneurs and small businesses reclaim their time by handling administrative tasks, social media management, and more.</p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <button class="btn px-8 py-4 rounded-full text-base font-semibold">WORK WITH ME</button>
+                        <a href="https://calendly.com/loid1989delmonte/30min" target="_blank" rel="noopener" class="btn px-8 py-4 rounded-full text-base font-semibold">WORK WITH ME</a>
                         <button class="btn px-8 py-4 rounded-full text-base font-semibold border border-white bg-black text-white hover:bg-white hover:text-black">VIEW SERVICES</button>
                     </div>
                 </div>
@@ -58,14 +58,69 @@
             </div>
             
             <div class="flex flex-col md:flex-row items-center justify-between gap-8 p-8 bg-black rounded-xl border border-white">
-                <div class="md:w-1/2">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80" alt="Collaboration" class="rounded-xl shadow-lg w-full h-auto">
-                </div>
-                <div class="md:w-1/2 text-center md:text-left">
-                    <p class="mb-4 text-lg text-white">With a virtual assistant, you can delegate tasks and responsibilities, opening up time for other business activities, providing you with flexibility and expertise tailored to your specific needs.</p>
-                    <p class="mb-4 text-lg text-white">Boosts productivity by taking care of routine and administrative tasks, freeing up your time to focus on core business activities and strategic growth.</p>
-                </div>
+                    <div class="w-full flex flex-col gap-8">
+                        <div class="text-center mb-2">
+                            <span class="block text-xl md:text-2xl font-bold text-white bg-white bg-opacity-10 px-8 py-4 rounded-full shadow-lg mx-auto w-fit tracking-wide">Struggling? Let's transform your workflow together!</span>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <!-- FROM THIS Column -->
+                            <div class="bg-gradient-to-br from-black via-gray-900 to-black border-2 border-white rounded-2xl p-6 flex flex-col gap-4 shadow-2xl">
+                                <h3 class="text-xl font-extrabold text-white mb-4 text-center tracking-wide">FROM THIS</h3>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center gap-3 bg-white bg-opacity-10 rounded-lg p-3 sync-hover-item" id="from-item-1">
+                                        <span class="text-2xl text-red-400 font-bold"><i class="fas fa-times-circle"></i></span>
+                                        <span class="text-white text-sm">Struggling to create high-quality, engaging videos and reels that capture your audience's attention.</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 bg-white bg-opacity-10 rounded-lg p-3 sync-hover-item" id="from-item-2">
+                                        <span class="text-2xl text-red-400 font-bold"><i class="fas fa-times-circle"></i></span>
+                                        <span class="text-white text-sm">Lacking time and consistency to manage multiple social media platforms effectively.</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 bg-white bg-opacity-10 rounded-lg p-3 sync-hover-item" id="from-item-3">
+                                        <span class="text-2xl text-red-400 font-bold"><i class="fas fa-times-circle"></i></span>
+                                        <span class="text-white text-sm">Difficulty keeping up with fast-changing trends and algorithms on Instagram, Facebook, and Pinterest.</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 bg-white bg-opacity-10 rounded-lg p-3 sync-hover-item" id="from-item-4">
+                                        <span class="text-2xl text-red-400 font-bold"><i class="fas fa-times-circle"></i></span>
+                                        <span class="text-white text-sm">Content creation feels overwhelming and results are inconsistent.</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 bg-white bg-opacity-10 rounded-lg p-3 sync-hover-item" id="from-item-5">
+                                        <span class="text-2xl text-red-400 font-bold"><i class="fas fa-times-circle"></i></span>
+                                        <span class="text-white text-sm">Balancing creative storytelling with strategic planning for growth is a constant challenge.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- TO THIS Column -->
+                            <div class="bg-gradient-to-br from-black via-gray-900 to-black border-2 border-white rounded-2xl p-6 flex flex-col gap-4 shadow-2xl">
+                                <h3 class="text-xl font-extrabold text-white mb-4 text-center tracking-wide">TO THIS</h3>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center gap-3 bg-white bg-opacity-10 rounded-lg p-3 sync-hover-item" id="to-item-1">
+                                        <span class="text-2xl text-green-400 font-bold"><i class="fas fa-check-circle"></i></span>
+                                        <span class="text-white text-sm">Professional, eye-catching videos and reels that grab attention and keep viewers engaged.</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 bg-white bg-opacity-10 rounded-lg p-3 sync-hover-item" id="to-item-2">
+                                        <span class="text-2xl text-green-400 font-bold"><i class="fas fa-check-circle"></i></span>
+                                        <span class="text-white text-sm">Consistent social media management across platforms, with regular posting and audience interaction.</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 bg-white bg-opacity-10 rounded-lg p-3 sync-hover-item" id="to-item-3">
+                                        <span class="text-2xl text-green-400 font-bold"><i class="fas fa-check-circle"></i></span>
+                                        <span class="text-white text-sm">Up-to-date content strategies that adapt to the latest trends and platform changes.</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 bg-white bg-opacity-10 rounded-lg p-3 sync-hover-item" id="to-item-4">
+                                        <span class="text-2xl text-green-400 font-bold"><i class="fas fa-check-circle"></i></span>
+                                        <span class="text-white text-sm">Creative and strategic content that increases reach, engagement, and results.</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 bg-white bg-opacity-10 rounded-lg p-3 sync-hover-item" id="to-item-5">
+                                        <span class="text-2xl text-green-400 font-bold"><i class="fas fa-check-circle"></i></span>
+                                        <span class="text-white text-sm">A balanced approach to storytelling and growth, helping your brand shine and expand.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- End Redesigned From This → To This Section -->
             </div>
+                
         </div>
     </section>
 
@@ -75,16 +130,15 @@
             <h2 class="text-3xl md:text-4xl font-light text-center mb-16 section-title">Meet Your Virtual Assistant</h2>
             
             <div class="flex flex-col md:flex-row items-center justify-between gap-12">
-                <div class="md:w-1/2 order-2 md:order-1">
-                        <img src="images/aboutme.jpg" alt="Jonh Loid at his desk" class="rounded-xl shadow-lg w-full h-auto">
+                <div class="md:w-1/2 order-2 md:order-1 flex justify-center items-center">
+                    <img src="images/profile1.jpg" alt="Jonh Loid at his desk" class="rounded-xl shadow-lg w-80 h-80 md:w-96 md:h-96 object-cover">
                 </div>
-                
-                <div class="md:w-1/2 text-center md:text-left order-1 md:order-2">
-                        <h3 class="text-2xl md:text-3xl font-light mb-6 text-white">Hi! I'm Jonh Loid</h3>
-                    <p class="mb-4 text-gray-300">I help small business owners and entrepreneurs with marketing strategy to generate more sales. With over 5 years of experience as a virtual assistant, I've developed systems and processes to help businesses run more efficiently.</p>
-                    <p class="mb-4 text-gray-300">My expertise includes social media management, email marketing, customer support, and administrative tasks. I'm dedicated to helping my clients focus on their core business while I handle the rest.</p>
+
+                <div class="md:w-1/2 text-center md:text-left order-1 md:order-2 flex flex-col justify-center items-center md:items-start" style="min-height:20rem;">
+                    <h3 class="text-2xl md:text-3xl font-light mb-6 text-white">Hi! I'm Jonh Loid Del Monte</h3>
+                    <p class="mb-4 text-gray-300 max-w-lg">a Video Editor and Social Media Manager who brings stories to life through eye-catching video edits and reels. I manage social media spaces like Facebook, Instagram, and Pinterest to make brands shine. With a blend of creativity and strategy, I help clients stand out and connect with their audience.</p>
                     <div class="flex flex-wrap gap-4 mt-8 justify-center md:justify-start">
-                        <button class="btn px-8 py-3 rounded-full text-sm font-semibold">WORK WITH ME</button>
+                        <a href="https://calendly.com/loid1989delmonte/30min" target="_blank" rel="noopener" class="btn px-8 py-3 rounded-full text-sm font-semibold">WORK WITH ME</a>
                         <button class="btn px-8 py-3 rounded-full text-sm font-semibold border border-white bg-black text-white hover:bg-white hover:text-black">DOWNLOAD CV</button>
                     </div>
                 </div>
@@ -160,6 +214,137 @@
                         <li>Proofreading</li>
                         <li>Templates creation</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Capabilities Section -->
+    <section class="py-16 gradient-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-light text-center mb-16 section-title">My Capabilities</h2>
+            
+            <div class="relative overflow-hidden">
+                <div class="logos-carousel flex space-x-8 py-4">
+                    <!-- Duplicate set for seamless looping -->
+                    <div class="logos-slide flex space-x-8 animate-scroll">
+                        <!-- Canva -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/canva.jpg" alt="Canva" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Calendly -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/calendly.jpg" alt="Calendly" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Google Workspace -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/googleworkspace.jpg" alt="Google Workspace" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Capcut -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/capcut.jpg" alt="Capcut" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Notion -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/notion.jpg" alt="Notion" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Apollo -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/apollo.jpg" alt="Apollo" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Buffer -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/buffer.jpg" alt="Buffer" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Meta Business Suite -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/meta.jpg" alt="Meta Business Suite" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Slack -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/slack.jpg" alt="Slack" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Microsoft Office -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/msoffice.jpg" alt="Microsoft Office" class="w-full h-full object-contain">
+                        </div>
+                        <!-- ChatGPT -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/gpt.jpg" alt="ChatGPT" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Gemini -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/gemini.jpg" alt="Gemini" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Grok -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/grok.jpg" alt="Grok" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Filmora -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/filmora.jpg" alt="Filmora" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+                    
+                    <!-- Duplicate set for seamless looping -->
+                     <div class="logos-slide flex space-x-8 animate-scroll">
+                        <!-- Canva -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/canva.jpg" alt="Canva" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Calendly -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/calendly.jpg" alt="Calendly" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Google Workspace -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/googleworkspace.jpg" alt="Google Workspace" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Capcut -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/capcut.jpg" alt="Capcut" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Notion -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/notion.jpg" alt="Notion" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Apollo -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/apollo.jpg" alt="Apollo" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Buffer -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/buffer.jpg" alt="Buffer" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Meta Business Suite -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/meta.jpg" alt="Meta Business Suite" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Slack -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/slack.jpg" alt="Slack" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Microsoft Office -->
+                        <div class="logo-item flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/msoffice.jpg" alt="Microsoft Office" class="w-full h-full object-contain">
+                        </div>
+                        <!-- ChatGPT -->
+                        <div class="flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/gpt.jpg" alt="ChatGPT" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Gemini -->
+                        <div class="flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/gemini.jpg" alt="Gemini" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Grok -->
+                        <div class="flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/grok.jpg" alt="Grok" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Filmora -->
+                        <div class="flex-shrink-0 w-32 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg">
+                            <img src="images/filmora.jpg" alt="Filmora" class="w-full h-full object-contain">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -313,4 +498,89 @@
         </div>
     </section>
 
+<style>
+    .sync-hover-item {
+        transition: background 0.3s, box-shadow 0.3s;
+    }
+    .sync-hover-item.sync-hover {
+        background: rgba(255,255,255,0.25) !important;
+        box-shadow: 0 0 10px 2px #b08e7a;
+    }
+    
+    /* Carousel Styles */
+    .logos-carousel {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .logos-slide {
+        display: flex;
+        animation: scroll 30s linear infinite;
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+    .logos-carousel.paused .logos-slide {
+        animation-play-state: paused;
+    .logo-item {
+        transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+        cursor: pointer;
+    }
+    .logo-item:hover {
+        transform: scale(1.08);
+        box-shadow: 0 4px 24px rgba(80,80,80,0.18);
+        border-color: #b08e7a;
+        z-index: 2;
+    }
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .logos-slide {
+            animation-duration: 20s;
+        }
+        
+        .flex-shrink-0 {
+            width: 24vw;
+            height: 24vw;
+        }
+    }
+</style>
+<script>
+    // Pause carousel when hovering any logo
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.logo-item').forEach(function(logo) {
+            logo.addEventListener('mouseenter', function() {
+                logo.closest('.logos-carousel').classList.add('paused');
+            });
+            logo.addEventListener('mouseleave', function() {
+                logo.closest('.logos-carousel').classList.remove('paused');
+            });
+        });
+    });
+    for (let i = 1; i <= 5; i++) {
+        const fromItem = document.getElementById('from-item-' + i);
+        const toItem = document.getElementById('to-item-' + i);
+        function addSyncHover() {
+            fromItem.classList.add('sync-hover');
+            toItem.classList.add('sync-hover');
+        }
+        function removeSyncHover() {
+            fromItem.classList.remove('sync-hover');
+            toItem.classList.remove('sync-hover');
+        }
+        fromItem.addEventListener('mouseenter', addSyncHover);
+        fromItem.addEventListener('mouseleave', removeSyncHover);
+        toItem.addEventListener('mouseenter', addSyncHover);
+        toItem.addEventListener('mouseleave', removeSyncHover);
+    }
+</script>
 <?php include 'includes/footer.php'; ?>

@@ -3,7 +3,7 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0 flex items-center space-x-4">
-                    <img src="images/footer.jpg" alt="Logo" class="w-12 h-12 rounded-full shadow-lg border-2 border-white">
+                    <img src="images/landingpage.jpg" alt="Logo" class="w-12 h-12 rounded-full shadow-lg border-2 border-white">
                     <div>
                         <h3 class="text-3xl font-extrabold tracking-wide text-white">JONH LOID</h3>
                         <p class="text-gray-400 mt-1 text-lg italic">Your Virtual Assistant</p>
