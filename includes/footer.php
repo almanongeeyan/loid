@@ -9,23 +9,25 @@
                         <p class="text-gray-400 mt-1 text-lg italic">Your Virtual Assistant</p>
                     </div>
                 </div>
-                <div class="flex space-x-8">
-                    <a href="#" class="group flex items-center text-gray-400 hover:text-white transition-colors font-medium">
-                        <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 8-4 8-4s8 0 8 4"/></svg>
-                        About
-                    </a>
-                    <a href="#" class="group flex items-center text-gray-400 hover:text-white transition-colors font-medium">
-                        <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3v4M8 3v4"/></svg>
-                        Services
-                    </a>
-                    <a href="#" class="group flex items-center text-gray-400 hover:text-white transition-colors font-medium">
-                        <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-                        Testimonials
-                    </a>
-                    <a href="#" class="group flex items-center text-gray-400 hover:text-white transition-colors font-medium">
-                        <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg>
-                        Contact
-                    </a>
+                <div class="w-full md:w-auto">
+                    <div class="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 items-center justify-center">
+                        <a href="index.php#about" class="footer-nav group flex items-center text-gray-400 hover:text-white transition-colors font-medium" data-scroll="about">
+                            <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 8-4 8-4s8 0 8 4"/></svg>
+                            About
+                        </a>
+                        <a href="index.php#services" class="footer-nav group flex items-center text-gray-400 hover:text-white transition-colors font-medium" data-scroll="services">
+                            <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3v4M8 3v4"/></svg>
+                            Services
+                        </a>
+                        <a href="index.php#testimonials" class="footer-nav group flex items-center text-gray-400 hover:text-white transition-colors font-medium" data-scroll="testimonials">
+                            <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                            Testimonials
+                        </a>
+                        <a href="index.php#contact" class="footer-nav group flex items-center text-gray-400 hover:text-white transition-colors font-medium" data-scroll="contact">
+                            <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg>
+                            Contact
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="flex justify-center mt-8 space-x-6">
@@ -46,6 +48,25 @@
         <div class="absolute inset-0 pointer-events-none select-none" aria-hidden="true">
             <svg class="w-full h-full" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#222" fill-opacity="0.3" d="M0,224L48,192C96,160,192,96,288,101.3C384,107,480,181,576,186.7C672,192,768,128,864,117.3C960,107,1056,149,1152,176C1248,203,1344,213,1392,218.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
         </div>
+    <script>
+        // Smooth scroll for footer navigation (if on index.php)
+        document.addEventListener('DOMContentLoaded', function() {
+            var navLinks = document.querySelectorAll('.footer-nav');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    // Only run smooth scroll if already on index.php
+                    if (window.location.pathname.endsWith('index.php')) {
+                        var targetId = link.getAttribute('href').split('#')[1];
+                        var targetSection = document.getElementById(targetId);
+                        if (targetSection) {
+                            e.preventDefault();
+                            targetSection.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
     </footer>
 </body>
 </html>

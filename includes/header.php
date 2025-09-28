@@ -120,25 +120,63 @@
     <nav class="bg-black shadow-lg sticky top-0 z-20 border-b border-gray-900">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
-                <a href="#" class="text-2xl font-extrabold tracking-wide text-white">JONH LOID</a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="nav-link font-medium transition-colors flex items-center">
-                        <i class="fas fa-user mr-2"></i> About
+                <a href="index.php" class="text-2xl font-extrabold tracking-wide text-white">JONH LOID</a>
+                <div class="hidden md:flex space-x-8" id="main-nav">
+                    <a href="index.php" class="nav-link font-medium transition-colors flex items-center">
+                        <i class="fas fa-home mr-2"></i> Home
                     </a>
-                    <a href="#services" class="nav-link font-medium transition-colors flex items-center">
-                        <i class="fas fa-briefcase mr-2"></i> Services
+                    <a href="mypricing.php" class="nav-link font-medium transition-colors flex items-center">
+                        <i class="fas fa-tags mr-2"></i> My Pricing
                     </a>
-                    <a href="#testimonials" class="nav-link font-medium transition-colors flex items-center">
-                        <i class="fas fa-comments mr-2"></i> Testimonials
+                    <a href="myaccomplishments.php" class="nav-link font-medium transition-colors flex items-center">
+                        <i class="fas fa-trophy mr-2"></i> My Accomplishment
                     </a>
-                    <a href="#contact" class="nav-link font-medium transition-colors flex items-center">
-                        <i class="fas fa-envelope mr-2"></i> Contact
+                    <a href="mycredentials.php" class="nav-link font-medium transition-colors flex items-center">
+                        <i class="fas fa-certificate mr-2"></i> My Credentials
                     </a>
                 </div>
-                <!-- Removed WORK WITH ME button -->
-                <button class="md:hidden focus:outline-none">
+                <!-- Hamburger button -->
+                <button class="md:hidden focus:outline-none" id="hamburger-btn" aria-label="Open menu">
                     <i class="fas fa-bars text-2xl text-gray-700"></i>
                 </button>
             </div>
+            <!-- Mobile menu -->
+            <div class="md:hidden" id="mobile-menu" style="display:none;">
+                <div class="flex flex-col space-y-4 py-4">
+                    <a href="index.php" class="nav-link font-medium transition-colors flex items-center px-4">
+                        <i class="fas fa-home mr-2"></i> Home
+                    </a>
+                    <a href="mypricing.php" class="nav-link font-medium transition-colors flex items-center px-4">
+                        <i class="fas fa-tags mr-2"></i> My Pricing
+                    </a>
+                    <a href="myaccomplishments.php" class="nav-link font-medium transition-colors flex items-center px-4">
+                        <i class="fas fa-trophy mr-2"></i> My Accomplishment
+                    </a>
+                    <a href="mycredentials.php" class="nav-link font-medium transition-colors flex items-center px-4">
+                        <i class="fas fa-certificate mr-2"></i> My Credentials
+                    </a>
+                </div>
+            </div>
+            </div>
         </div>
-    </nav
+    </nav>
+    <script>
+    // Hamburger menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        var hamburgerBtn = document.getElementById('hamburger-btn');
+        var mobileMenu = document.getElementById('mobile-menu');
+        hamburgerBtn.addEventListener('click', function() {
+            if (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') {
+                mobileMenu.style.display = 'block';
+            } else {
+                mobileMenu.style.display = 'none';
+            }
+        });
+        // Optional: Hide menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                mobileMenu.style.display = 'none';
+            });
+        });
+    });
+    </script>
